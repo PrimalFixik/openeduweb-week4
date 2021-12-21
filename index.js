@@ -1,9 +1,9 @@
 import http from "http";
 const CORS = {
   "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET,POST,DELETE,OPTIONS",
+  "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
   "Access-Control-Allow-Headers":
-    "Content-Type, Access-Control-Allow-Headers, x-test",
+    "x-test,Content-Type,Accept,Access-Control-Allow-Headers",
 };
 const server = http.createServer(async (req, res) => {
   if (req.url === "/result4/") {
